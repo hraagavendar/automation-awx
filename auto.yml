@@ -1,6 +1,7 @@
 - name: Create multiple read-only directories
   hosts: all
   become: yes
+  become_user: root
   gather_facts: false
 
   vars:
